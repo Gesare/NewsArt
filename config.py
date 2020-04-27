@@ -4,10 +4,12 @@ class Config:
     '''
     General configuration parent class.
     '''
-    SOURCES_API_BASE_URL= 'https://newsapi.org/v2/sources?apiKey={}'
-    SOURCE_ARTICLES_BASE_URL='https://newsapi.org/v2/everything?sources={}&apiKey={}'
-    NEW_API_KEY = os.environ.get('NEW_API_KEY')
-    SECRET_KEY = os.environ.get('SECRET_KEY')
+    NEWS_SOURCES_BASE_URL ='https://newsapi.org/v2/sources?language=en&category={}&apiKey={}'
+   	ARTICLES_BASE_URL = 'https://newsapi.org/v2/everything?language=en&sources={}&apiKey={}'
+   	NEWS_API_KEY = os.environ.get('NEWS_API_KEY')
+@staticmethod
+def init_app(app):
+pass
     
 class ProdConfig(Config):
     '''
