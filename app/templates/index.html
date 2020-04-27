@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% import 'macros.html' as macro %}
 
-<!--Styles Block-->https://news-base.herokuapp.com/
+<!--Styles Block-->
 {% block styles %}
     {{ super() }}
     <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
@@ -14,7 +14,7 @@
     <div class="form">
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search article" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" value="Submit" type="submit">Search</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" value="Submit" type="submit">Search for news articles</button>
         </form>
     </div>
     <ul>

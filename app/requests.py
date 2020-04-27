@@ -1,3 +1,4 @@
+
 import urllib.request,json
 from .models import Source, News_Article
 import datetime
@@ -14,6 +15,7 @@ def configure_request(app):
     sources_api_key = app.config['NEW_API_KEY']
     sources_url = app.config['SOURCES_API_BASE_URL']
     source_articles_url = app.config['SOURCE_ARTICLES_BASE_URL']
+
 
 
 def get_sources():

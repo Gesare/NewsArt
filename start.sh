@@ -1,4 +1,4 @@
-export NEW_API_KEY = '8fe5978e97c94e59859d762afd272845'
+export NEW_API_KEY = '2714546ac97147e8b6f08a912e752e90'
 export SECRET_KEY = '1234567890'
 
-python3 manage.py server
+python3.6 manage.py server

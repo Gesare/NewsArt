@@ -32,5 +32,3 @@ class News_Article_Test(unittest.TestCase):
         '''
         self.assertTrue(isinstance(self.new_article,News_Article))
 
-# if __name__== '__main__':
-#    unittest.main()
