@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+    <img src="{{article.image}}" alt="{{article.title}}">
+    <p>{{article.content|truncate(240)}}<a>(Read More)</a></p>
+{% endblock %}

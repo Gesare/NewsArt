@@ -1,0 +1,45 @@
+
+{% macro displaySourceList(source_list) %}
+    <div class="container-fluid sources">
+        <div class="row">
+            {% for source in source_list %}
+                <div class="col-sm-4 cardColor" >
+                    <div class="card sourceCard">
+                        <div class="card-header header">
+                            <a href="/source/{{source.id}}">{{source.name}}</a>
+                        </div>
+                        <div class="card-body bodyCard">
+                            <h5 class="card-text">{{source.description| truncate(150)}}</h5>
+                            <span><a href="/source/{{source.id}}" class="visit">(View Articles)</a></span>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro displaySourceArticles(news_articles)%}
+    <div class="container-fluid">
+        <div class="row">
+            {% for article in news_articles %}
+                <div class="col-sm-6">
+                    <div class="card articleCard">
+
+                        <div class="card-header cardHeader">
+                            <h4><a href="{{article.url}}">{{article.title}}</a></h4>
+                        </div>
+
+                        <img src="{{article.image}}" alt="{{article.title}}" class="card-img">
+
+                        <div class="card-body cardBody" >
+                            <p>{{article.description}}....<a href="{{article.url}}" class="readmore">(Read More)</a> </p>
+                            <p class="published">{{article.publishedAt}}</p>
+                        </div>
+                    </div>
+                </div>
+               <!--<li><a href="/content/{{article.id}}/{{article.title}}">{{article.id}}</a></li>--> 
+            {% endfor %}
+        </div> 
+    </div>
+{% endmacro %}
