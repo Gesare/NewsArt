@@ -1,23 +1,20 @@
-{% extends 'base.html' %}
-{% import 'macros.html' as macro %}
-
-<!--Styles Block-->
-{% block styles %}
-    {{ super() }}
-    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bitter|Open+Sans:400i&display=swap" rel="stylesheet">
-{% endblock %}
-
-<!--Content Block-->
-{% block content %}
-    <div class="form">
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search article" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" value="Submit" type="submit">Search for news articles</button>
-        </form>
-    </div>
-    <ul>
-        {{macro.displaySourceList(sources)}}
-    </ul>
-{% endblock %}
+{% block content%}
+<div class="container">
+		<!-- Business News Section  -->
+        <h3> Top Business News Sources</h3>
+        <hr>
+        {{ macro.displaySourceList(sources)}}
+        <!-- Business News Section  -->
+        <h3> Top Technology News Sources</h3>
+        <hr>
+        {{ macro.displaySourceList(technology_sources)}}
+        <!-- Entertainment News Section  -->
+        <h3> Top Entertainment News Sources</h3>
+        <hr>
+        {{ macro.displaySourceList(entertainment_sources)}}
+        <!-- Entertainment News Section  -->
+        <h3> Top Sports News Sources</h3>
+        <hr>
+        {{ macro.displaySourceList(sports_sources)}}
+</div>
+{%endblock%}
