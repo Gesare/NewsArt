@@ -1,5 +1,5 @@
 body {
-    background-color: #c0babc;
+    background-color: #008B8B;
 }
 .form {
     text-align: center;
@@ -7,7 +7,7 @@ body {
 }
 .visit {
     text-decoration: none;
-    color: #e71d36;
+    color: #008080;
 }
 .visit:hover{
     font-weight: bold;
@@ -18,7 +18,7 @@ body {
     width: 300px;
     border: 1px solid gray;
     border-radius: 15px;
-    background-color: white;
+    background-color: #1E90FF;
 }
 
 
@@ -37,7 +37,7 @@ body {
     color: black;
 }
 .header a:hover{
-    color:#e71d36 ;
+    color:#1E90FF ;
 }
 .bodyCard {
     font-family: 'Bitter', serif;

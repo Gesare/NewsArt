@@ -1,5 +1,5 @@
 body {
-    background-color: #c0babc;
+    background-color: #008B8B;
 }
 .search{
     margin-left: 50px;
@@ -52,11 +52,10 @@ body {
     text-decoration: none;
 }
 .cardHeader a:hover {
-    color: #e71d36;
     font-weight: bold;
 }
 .readmore {
-    color: #e71d36;
+    color: #1E90FF;
 }
 .readmore:hover {
     font-weight: bold;
