@@ -1,4 +1,4 @@
-{% macro displaySourceList(source_list) %}
+{% macro displaySourcesList(source_list) %}
 	{% for source_row in source_list |batch(4)%}
         <div class="row">	
             {% for sources in source_row %}

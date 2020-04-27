@@ -1,4 +1,4 @@
-class Source:
+class Sources:
     '''
     Class to create the news source instances. 
     '''

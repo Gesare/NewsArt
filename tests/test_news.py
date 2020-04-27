@@ -1,5 +1,5 @@
 import unittest
-from app.models import Sources,Articles
+from app.models import Sources,News_Article
 
 class SourcesTest(unittest.TestCase):
     '''
@@ -33,10 +33,10 @@ class ArticlesTest(unittest.TestCase):
         '''
         Set up method that will run before every Test
         '''
-        self.new_article = Articles('CNN','Peter Polle','The tech scene in Africa-Is it the next big thing?','A look at various tech hubs in Africa and the impact they have on the worlds economy','techie.com','techie.com/7643t94.jpg','2018-04-11T07:57:16Z')
+        self.new_article = News_Article('CNN','Peter Polle','The tech scene in Africa-Is it the next big thing?','A look at various tech hubs in Africa and the impact they have on the worlds economy','techie.com','techie.com/7643t94.jpg','2018-04-11T07:57:16Z')
 
     def test_instance(self):
-        self.assertTrue(isinstance(self.new_article,Articles))
+        self.assertTrue(isinstance(self.new_article,News_Article))
 
     def test_to_check_instance_variables(self):
         self.assertEquals(self.new_article.id,'CNN')
