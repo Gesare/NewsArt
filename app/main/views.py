@@ -14,11 +14,6 @@ def index():
 
     search_source = request.args.get('search')
 
-    #session_variable = session.get('source')
-    #session.pop('source',None)
-
-    #if session_variable:   
-    #   return redirect(url_for('.source', source_id=session_variable))# Session redirect
     if search_source:
         return redirect(url_for('.search_source',query_string=search_source)) 
     else:
