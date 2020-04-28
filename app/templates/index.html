@@ -1,22 +1,28 @@
 {% extends 'base.html'%} 
 {% import 'macros.html' as macro%}
 {% block content%}
-<div class="container">
-		<!-- Business News Section  -->
-        <h3> Top Business News Sources</h3>
-        <hr>
-        {{ macro.displaySourcesList(sources)}}
-        <!-- Business News Section  -->
-        <h3> Top Technology News Sources</h3>
-        <hr>
-        {{ macro.displaySourcesList(technology_sources)}}
-        <!-- Entertainment News Section  -->
-        <h3> Top Entertainment News Sources</h3>
-        <hr>
-        {{ macro.displaySourcesList(entertainment_sources)}}
-        <!-- Entertainment News Section  -->
-        <h3> Top Sports News Sources</h3>
-        <hr>
-        {{ macro.displaySourcesList(sports_sources)}}
-</div>
+{% block styles%}
+        {{ super() }}
+        <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+    {% endblock %}
+    <body style="background-color:rgb(0,128,128);">
+        <div class="container">
+                <!-- Business News Section  -->
+                <h3> Top Business News Sources</h3>
+                <hr>
+                {{ macro.displaySourcesList(sources)}}
+                <!-- Business News Section  -->
+                <h3> Top Technology News Sources</h3>
+                <hr>
+                {{ macro.displaySourcesList(technology_sources)}}
+                <!-- Entertainment News Section  -->
+                <h3> Top Entertainment News Sources</h3>
+                <hr>
+                {{ macro.displaySourcesList(entertainment_sources)}}
+                <!-- Entertainment News Section  -->
+                <h3> Top Sports News Sources</h3>
+                <hr>
+                {{ macro.displaySourcesList(sports_sources)}}
+        </div>
+    </body>
 {%endblock%}
