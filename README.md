@@ -5,7 +5,7 @@
 
 
 # By Gesare Ayienda Ombati
-### The link is :https://newsges.herokuapp.com/
+### The link is :
 
 ## Description
 News Highlights is a web application that displays a list of various news sources worldwide. On choosing a news source, it will preview the news articles of the day. Clicking a news article will redirect the user to read it fully from the news source website. It achieves this by using the 
